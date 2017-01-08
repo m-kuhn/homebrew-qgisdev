@@ -85,13 +85,13 @@ class Qgis3Dev < Formula
 
   # core providers
   depends_on "m-kuhn/osgeo4mac/gdal2" # keg_only
-  depends_on "osgeo/osgeo4mac/gdal2-python" => ["with-python3"] # keg_only
-  depends_on "osgeo/osgeo4mac/oracle-client-sdk" if build.with? "oracle"
+  depends_on "m-kuhn/osgeo4mac/gdal2-python" => ["with-python3"] # keg_only
+  depends_on "m-kuhn/osgeo4mac/oracle-client-sdk" if build.with? "oracle"
   # TODO: add MSSQL third-party support formula?, :optional
 
   # core plugins (c++ and python)
   if build.with? "grass"
-    depends_on "osgeo/osgeo4mac/grass7"
+    depends_on "m-kuhn/osgeo4mac/grass7"
     depends_on "gettext" # keg_only
   end
 
@@ -112,9 +112,9 @@ class Qgis3Dev < Formula
 
   # core processing plugin extras
   # see `grass` above
-  depends_on "osgeo/osgeo4mac/orfeo5" => :optional
+  depends_on "m-kuhn/osgeo4mac/orfeo5" => :optional
   depends_on "homebrew/science/r" => :optional
-  depends_on "osgeo/osgeo4mac/saga-gis" => :optional
+  depends_on "m-kuhn/osgeo4mac/saga-gis" => :optional
   # TODO: LASTools straight build (2 reporting tools), or via `wine` (10 tools)
   # TODO: Fusion from USFS (via `wine`?)
 
