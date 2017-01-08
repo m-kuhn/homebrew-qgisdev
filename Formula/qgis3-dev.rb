@@ -67,7 +67,7 @@ class Qgis3Dev < Formula
   depends_on "psycopg2" => :python3
 
   depends_on "qt5" # keg_only
-  depends_on "osgeo/osgeo4mac/qt5-webkit" => :recommended # keg_only
+  depends_on "m-kuhn/osgeo4mac/qt5-webkit" => :recommended # keg_only
   depends_on "sip" => ["with-python3"]
   depends_on "pyqt5"
   depends_on "qca"
