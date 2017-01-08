@@ -84,7 +84,7 @@ class Qgis3Dev < Formula
   depends_on "postgresql" => :recommended
 
   # core providers
-  depends_on "osgeo/osgeo4mac/gdal2" # keg_only
+  depends_on "m-kuhn/osgeo4mac/gdal2" # keg_only
   depends_on "osgeo/osgeo4mac/gdal2-python" => ["with-python3"] # keg_only
   depends_on "osgeo/osgeo4mac/oracle-client-sdk" if build.with? "oracle"
   # TODO: add MSSQL third-party support formula?, :optional
